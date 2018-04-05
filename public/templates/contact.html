@@ -1,0 +1,81 @@
+<div class="maps">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.510033629891!2d-74.055485!3d4.678430!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a9154fa9a3d%3A0xa23db90cbae0d230!2sCalle.+93+%2319-55+of.8101%2C+Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1477970401751"  frameborder="0" style="border:0" allowfullscreen></iframe>
+  <!--<ng-map zoom="{{mapZoom}}" center="{{mapCenterLocation}}" scrollwheel="false" class="map" ng-if="!!mapCenterLocation && !!mapMarkerLocation && !!mapZoom">
+    <marker id="addressmarker" position="{{mapMarkerLocation}}" title="Clever Leaves" draggable="false" on-click="map.showInfoWindow('address')"></marker>
+    <info-window id="address" visible-on-marker="addressmarker">
+      <div ng-non-bindable>
+
+      </div>
+    </info-window>
+  </ng-map>-->
+</div>
+
+
+<div id="contact">
+  <div class="cols3">
+    <div class="col">
+      <div class="col-c">
+        <h3>Email</h3>
+        <div ng-bind-html="$root.config.email | to_trusted"></div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="col-c">
+        <h3>{{getTelefonosTitle()}}</h3>
+        <div ng-bind-html="$root.config.telefonos | to_trusted"></div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="col-c">
+        <h3>{{getDireccionTitle()}}</h3>
+        <div ng-bind-html="$root.config.direccion | to_trusted"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-contact">
+    <form name="contact" ng-submit="sendEmail()">
+      <div class="cols2">
+        <div class="col">
+          <div class="col-c">
+            <p>{{getNombreTitle()}} *</p>
+            <input required type="text" ng-model="contactName" pattern="^[áàãâäéèêëíìîïóòõôöúùûüÁÀÃÂÄÉÈÊËÍÌÎÏÓÒÕÖÔÚÙÛÜÝýỲỳŶŷŸÿỸỹçÇñÑa-zA-Z\s]{1,100}$">
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="col-c">
+            <p>EMAIL *</p>
+            <input required type="text" ng-model="contactEmail" pattern="^[a-z0-9._-]{1,50}@[a-z0-9_-]{1,50}\.[a-z.]{2,10}$">
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="col-c">
+            <p>{{getTelefonoTitle()}} *</p>
+            <input required type="text" ng-model="contactPhone" pattern="^[(0-9+\s())(e?x?t?(\d*))]{7,50}$">
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="col-c">
+            <p>{{getEmpresaTitle()}} *</p>
+            <input required type="text" ng-model="contactCompany" pattern="^[áàãâäéèêëíìîïóòõôöúùûüÁÀÃÂÄÉÈÊËÍÌÎÏÓÒÕÖÔÚÙÛÜÝýỲỳŶŷŸÿỸỹçÇñÑa-zA-Z\s]{1,100}$">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-c">
+        <p>{{getMensajeTitle()}}</p>
+        <textarea required name="" id="mensaje" ng-model="contactMessage" pattern="^[áàãâäéèêëíìîïóòõôöúùûüÁÀÃÂÄÉÈÊËÍÌÎÏÓÒÕÖÔÚÙÛÜÝýỲỳŶŷŸÿỸỹçÇñÑa-zA-Z0-9.:,;%=\/*+-_?¿¡!$\s@#]{1,600}$"></textarea>
+      </div>
+
+      <div class="cont-btn">
+        <input type="submit" class="blue" value="{{getSubmitButtonLabel()}}">
+      </div>
+    </form>
+
+  </div>
+</div>

@@ -1,0 +1,434 @@
+/*1024*/
+
+
+.mobile{
+  display: block;
+}
+
+.desktop{
+	display: none;
+}
+
+
+/*960*/
+@media only screen and (max-width : 960px) {
+#logo {
+    padding: 0 0 20px 0;
+}
+
+.red{
+  margin-right: 0px;
+}
+
+.cont-item{
+  position: static;
+}
+
+.slider-box-black{
+  padding: 50px;
+  left: 100px;
+  right: 100px;
+}
+
+
+
+.red.menu-icon{
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.ancho {
+    width: 90%;
+}
+
+.redes{
+  height: 30px;
+  line-height: 30px;
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  z-index: 5000;
+}
+
+#search{
+  top:10px;
+}
+
+#search input{
+  width: 120px;
+}
+
+#language{
+  margin-top: 50px;
+}
+
+#menu-movil{
+	display: inline-block;
+}
+
+#menu ul li {
+    display: block;
+    margin-right: 0
+}
+
+#menu ul li a{
+	color: #fff;
+	font-size: 19px;
+	letter-spacing: 2px;
+	text-align: left;
+	border-right: 0;
+}
+
+#menu {
+    background-color: rgba(0,0,0,0.8);
+    width: auto;
+    position: fixed;
+    top: 50px;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+    z-index: 6000;
+    margin: 0;
+    transform: translateX(-100%);
+    transition: all 0.4s;
+}
+
+#menu.open{
+    transform: translateX(0);
+}
+
+#menu a.selected{
+  background: #00bcb4;
+}
+
+#menu > ul{
+  margin: 20px 0;
+}
+
+#menu .submenu {
+    background-color: transparent;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+    display: block;
+}
+
+#menu > ul{
+  padding: 0 0px 0 0px
+}
+
+#menu ul li a > span{
+  border: 0;
+}
+#menu > ul li{
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#menu > ul > li > a{
+	font-size: 16px;
+}
+
+#menu .submenu{
+  background: rgba(0,0,0,0.5);
+}
+
+#menu .submenu ul li a {
+    border-bottom: 0;
+    text-align: left;
+    margin-left: 40px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+#value .cols3 .col{
+	width: 100%;
+	margin-right: 0;
+}
+
+#value .cols3 ul li {
+    text-align: center;
+}
+
+.desc-team{
+  height: auto;
+}
+
+#team{
+  padding: 20px 0 10px;
+}
+
+#story{
+  padding-bottom: 0;
+}
+
+#story .cols2{
+  margin-top: 0;
+}
+
+#story .col-c{
+  padding-top: 0;
+
+}
+
+a.phone{
+	color:#636466;
+}
+
+.title2{
+  text-align: center;
+  margin: 10px;
+}
+
+#value .cols3 h4 {
+    font-size: 22px;
+}
+
+#strategic .cols2 .col{
+	width: 100%;
+	margin-right: 0;
+	margin-bottom: 20px;
+}
+
+#strategic .col-c {
+    height: auto;
+}
+
+.maps iframe{
+	width: 100%;
+	height: 350px;
+}
+
+#cannabis-model, #portfolio, #value, #bussines, #strategic, #team, #story{
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+#cannabis-model .cols3 .col{
+	width: 100%;
+	margin-right: 0;
+}
+
+.cont-cannabis {
+    height: auto;
+    text-align: center;
+}
+
+}
+
+@media only screen and (max-width : 890px) {
+  .slider-title {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width : 800px) {
+  .slider-box-black{
+    padding: 40px;
+  }
+}
+
+
+
+/*728*/
+@media only screen and (max-width : 728px) {
+
+.slider-title{
+  font-size: 22px;
+}
+  .about-cannabis-c{
+    padding-top: 20px;
+  }
+
+  .composition .cols5 > .col{
+   width: 32%;
+    margin-right: 2%;
+    float: left;
+    margin-bottom: 2%;
+}
+
+.composition .cols5 > .col:nth-child(3n){
+    margin-right: 0;
+}
+
+}
+
+@media only screen and (max-width : 620px) {
+  .slider-title{
+      font-size: 22px;
+  }
+  .slider-box-black{
+    padding: 30px;
+    margin-top: -80px;
+  }
+
+}
+
+/*600*/
+@media only screen and (max-width : 600px) {
+  .slider-title{
+      font-size: 18px;
+  }
+  .slider-box-black{
+    left: 70px;
+    right: 70px;
+    padding: 25px;
+    margin-top: -60px;
+  }
+  .regulation-c h2{
+      font-size: 25px;
+  }
+
+
+#team .cols3 .col, #advisory-team .cols3 .col{
+	width: 49%;
+	margin-right: 2%;
+	float: left;
+}
+
+#team .cols3 > .col:nth-child(2n), #advisory-team .cols3 > .col:nth-child(2n){
+	margin-right: 0;
+}
+
+#story .cols2 .col{
+	width: 100%;
+	margin-right: 0;
+}
+
+#contact .cols3{
+  margin: 10px 0 10px;
+}
+
+#contact .cols3 .col{
+	width: 100%;
+	margin-right: 0;
+}
+
+#contact .cols3 .col-c {
+    border-left: 0;
+    height: auto;
+    padding: 20px 0;
+}
+
+#contact .cols3 .col:last-child > .col-c {
+    border-right: 0;
+}
+
+#contact .cols3 h3 {
+    margin-bottom: 0px;
+}
+
+.form-contact .cols2 .col{
+	width: 100%;
+	margin-right: 0;
+}
+
+.item h3{
+  font-size: 15px;
+}
+
+}
+
+
+/*480*/
+@media only screen and (max-width : 480px) {
+
+  .slider-title{
+    font-size: 14px;
+  }
+
+  .slider-box-black{
+    padding: 20px;
+  }
+
+  .composition .cols5 > .col{
+     width: 49%;
+      margin-right: 2%;
+      float: left;
+  }
+
+  .composition .cols5 > .col:nth-child(2n){
+      margin-right: 0;
+  }
+
+  .composition .cols5 > .col:nth-child(3n){
+      margin-right: 2%;
+  }
+
+  .regulation-c h2{
+      font-size: 20px;
+  }
+
+  #about-cannabis .title2{
+      font-size: 20px;
+  }
+
+#team .cols3 .col, #advisory-team .cols3 .col{
+	width: 100%;
+	margin-right: 0;
+	float: left;
+	text-align: center;
+}
+
+.item {
+    padding: 0;
+    width: 100%;
+    float: none;
+}
+
+.cont-item {
+    width: 100%;
+}
+
+footer .icon-clever{
+  width: 40px;
+  margin-bottom: 15px;
+}
+
+}
+
+@media only screen and (max-width : 480px) {
+  .slider-title{
+    font-size: 13px;
+  }
+
+  .slider-box-black{
+    padding: 15px;
+    left: 50px;
+    right: 50px;
+    margin-top: -50px;
+  }
+
+}
+/*320*/
+@media only screen and (max-width : 320px) {
+#menu {
+    width: 100%;
+}
+
+.slider-title{
+  font-size: 11px;
+}
+
+.slider-box-black{
+  padding: 10px;
+}
+
+#menu {
+    width: 100%;
+}
+
+.composition .cols5 > .col{
+   width: 100%;
+    margin-right: 0;
+    float: none;
+}
+
+#about-cannabis .title2{
+    font-size: 16px;
+}
+
+
+}

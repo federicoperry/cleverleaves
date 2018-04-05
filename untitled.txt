@@ -1,0 +1,24 @@
+gmail
+user: info@cleverleaves.com
+pass: Info16150
+
+heroku
+user: info@cleverleaves.com
+pass: Info16150
+
+mlab
+user: cleverleaves
+pass: Info16150
+
+mailchimp
+user: cleverleaves
+pass: Info16150@
+email: info@cleverleaves.com
+Mailchimp
+info@cleverleaves.com
+cleverleavesco
+Clever#2017
+
+godaddy
+User: gaescobar
+pass: Septiembre150
