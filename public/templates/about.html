@@ -1,0 +1,36 @@
+<div id="team" ng-if="!!team">
+  <h2>{{getTeamTitle()}}</h2>
+  <h2 class="title2">{{getTeamTitle2()}}</h2>
+  <div class="cols3">
+    <div class="col" ng-repeat="member in team.team track by $index">
+      <div class="col-c">
+        <img ng-src="{{member.photo.url || '/assets/images/foto-gris.jpg'}}" alt="{{member.name}}" class="full-img">
+        <div class="desc-team">
+          <h3>{{member.name}}</h3>
+          <p><span>{{member[$root.language+"Position"]}}</span></p>
+          <p>{{member[$root.language+"Experience"]}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="advisory-team" ng-if="!!team">
+  <h2 class="title2">{{getTeamTitle3()}}</h2>
+  <div class="cols3">
+    <div class="col"  ng-repeat="member in team.advisoryTeam track by $index">
+      <div class="col-c">
+        <img ng-src="{{member.photo.url || '/assets/images/foto-gris.jpg'}}" alt="{{member.name}}" class="full-img">
+        <div class="desc-team">
+          <h3>{{member.name}}</h3>
+          <p><span>{{member[$root.language+"Position"]}}</span></p>
+          <p>{{member[$root.language+"Experience"]}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div ng-if="!!page" ng-bind-html="page[$root.language+'Html'] | to_trusted">
+
+</div>
